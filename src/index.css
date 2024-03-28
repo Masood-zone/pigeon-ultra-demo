@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(242, 170, 76, 0.17)),
+      color-stop(39.62%, rgba(250, 171, 67, 0.055)),
+      color-stop(99%, hsla(34, 84%, 80%, 0.12))
+    ),
+    #fff;
+  background: -webkit-linear-gradient(
+      top,
+      rgba(242, 170, 76, 0.17),
+      rgba(250, 171, 67, 0.055) 39.62%,
+      hsla(34, 84%, 80%, 0.12) 99%
+    ),
+    #fff;
+  background: linear-gradient(
+      180deg,
+      rgba(242, 170, 76, 0.17),
+      rgba(250, 171, 67, 0.055) 39.62%,
+      hsla(34, 84%, 80%, 0.12) 99%
+    ),
+    #fff;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Scrolling, Scrollbar style */
+.scroll-behaviour {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+  border: 3px solid #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
