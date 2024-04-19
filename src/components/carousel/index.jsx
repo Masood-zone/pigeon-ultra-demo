@@ -5,7 +5,7 @@ import { useCallback, useState } from "react";
 function Carousel({ data }) {
   const [activeButton, setActiveButton] = useState("button1");
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, axis: "y" }, [
-    Autoplay({ delay: 1000 }),
+    Autoplay({ delay: 10000 }),
   ]);
 
   // Prev and Next button functions
